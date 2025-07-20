@@ -60,7 +60,7 @@ router.beforeEach(() => {
       <Transition :duration="550" name="nested">
         <nav
           v-if="isMenuOpen"
-          class="absolute top-0 left-0 z-50 flex h-screen w-screen flex-col items-center justify-between bg-white p-4 lg:hidden dark:bg-black"
+          class="absolute top-0 left-0 z-50 flex h-dvh w-screen flex-col items-center justify-between bg-white p-4 lg:hidden dark:bg-black"
         >
           <ThemeSwitch />
           <div class="flex flex-col items-center gap-8">

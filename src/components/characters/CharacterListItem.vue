@@ -75,13 +75,7 @@ function onFavourite() {
     </template>
 
     <template #heading>
-      <div class="flex items-center gap-2">
-        <BaseButton :variant="ButtonVariant.GHOST" :size="ButtonSize.SQUARE" @click="onFavourite">
-          <HeartIcon
-            :class="isFavourite ? 'fill-red-500 stroke-red-500' : 'fill-red-200 stroke-red-200'"
-          />
-        </BaseButton>
-
+      <div class="flex items-center justify-between gap-2">
         <div>
           <BaseButton
             :variant="ButtonVariant.GHOST"
@@ -115,6 +109,18 @@ function onFavourite() {
             </BaseButton>
           </div>
         </div>
+
+        <BaseButton
+          :variant="ButtonVariant.GHOST"
+          :size="ButtonSize.SQUARE"
+          class="p-0!"
+          @click="onFavourite"
+        >
+          <HeartIcon
+            class="w-24"
+            :class="isFavourite ? 'fill-red-500 stroke-red-500' : 'fill-red-200 stroke-red-200'"
+          />
+        </BaseButton>
       </div>
     </template>
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { twMerge } from 'tailwind-merge'
 import { computed } from 'vue'
-import { BadgeVariant } from '@/constants/badge-class'
+import { badgeBase, BadgeVariant } from '@/constants/badge-class'
 
 const props = withDefaults(
   defineProps<{
@@ -14,7 +14,7 @@ const props = withDefaults(
 )
 
 const classes = computed(() => {
-  const attributes: string[] = ['rounded-full px-1.5 py-0.5 text-xs font-thin']
+  const attributes: string[] = [badgeBase]
 
   attributes.push(props.variant)
 

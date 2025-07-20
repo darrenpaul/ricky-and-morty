@@ -34,11 +34,15 @@ function onToggle() {
       {{ props.label }}
     </BaseButton>
 
-    <dialog ref="dialog" :open="isOpen" class="fixed mx-auto my-auto bg-transparent p-4">
+    <dialog
+      ref="dialog"
+      :open="isOpen"
+      class="fixed mx-auto my-auto min-w-screen bg-transparent p-4 lg:min-w-96"
+    >
       <Container>
         <slot />
 
-        <BaseButton @click="onToggle">
+        <BaseButton class="w-full" @click="onToggle">
           Close
         </BaseButton>
       </Container>
