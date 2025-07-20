@@ -1,7 +1,7 @@
-import type { RouteLocationNormalizedLoaded, Router, useRoute, useRouter } from 'vue-router'
+import type { RouteLocationNormalizedLoaded, Router } from 'vue-router'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-
-import { useSearchParamString } from '@/composables/search-param-string.ts'
+import { useRoute, useRouter } from 'vue-router'
+import { useSearchParamString } from '../../composables/search-param-string'
 
 vi.mock('vue-router', () => ({
   useRoute: vi.fn(),
