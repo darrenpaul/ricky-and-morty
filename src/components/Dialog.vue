@@ -15,8 +15,7 @@ watch(isOpen, () => {
     if (isOpen.value) {
       dialog.value.showModal()
       document.body.classList.add('overflow-y-hidden')
-    }
-    else {
+    } else {
       dialog.value.close()
       document.body.classList.remove('overflow-y-hidden')
     }
@@ -34,13 +33,15 @@ function onToggle() {
       {{ props.label }}
     </BaseButton>
 
-    <dialog ref="dialog" :open="isOpen" class="fixed mx-auto my-auto bg-transparent p-4">
+    <dialog
+      ref="dialog"
+      :open="isOpen"
+      class="fixed mx-auto my-auto min-w-screen bg-transparent p-4 lg:min-w-96"
+    >
       <Container>
         <slot />
 
-        <BaseButton @click="onToggle">
-          Close
-        </BaseButton>
+        <BaseButton class="w-full" @click="onToggle"> Close </BaseButton>
       </Container>
     </dialog>
   </div>

@@ -23,7 +23,7 @@ export function useApi() {
     fetching.value.characters = isFetching.value
 
     if (data.value) {
-      const { info, results }: { info: PageMetadata, results: Character[] } = JSON.parse(data.value)
+      const { info, results }: { info: PageMetadata; results: Character[] } = JSON.parse(data.value)
 
       return { info, results, error: error.value, statusCode: statusCode.value }
     }
@@ -74,7 +74,7 @@ export function useApi() {
     fetching.value.episodes = isFetching.value
 
     if (data.value) {
-      const { info, results }: { info: PageMetadata, results: Episode[] } = JSON.parse(data.value)
+      const { info, results }: { info: PageMetadata; results: Episode[] } = JSON.parse(data.value)
 
       return { info, results, error: error.value, statusCode: statusCode.value }
     }

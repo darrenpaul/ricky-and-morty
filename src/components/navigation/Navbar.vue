@@ -22,8 +22,7 @@ const isMenuOpen = ref<boolean>(false)
 watch(isMenuOpen, () => {
   if (isMenuOpen.value) {
     document.body.classList.add('overflow-y-hidden')
-  }
-  else {
+  } else {
     document.body.classList.remove('overflow-y-hidden')
   }
 })
@@ -49,7 +48,7 @@ router.beforeEach(() => {
       <img
         class="h-16 md:h-24"
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/1600px-Rick_and_Morty.svg.png"
-      >
+      />
     </div>
 
     <div class="block lg:hidden">
@@ -60,7 +59,7 @@ router.beforeEach(() => {
       <Transition :duration="550" name="nested">
         <nav
           v-if="isMenuOpen"
-          class="absolute top-0 left-0 z-50 flex h-screen w-screen flex-col items-center justify-between bg-white p-4 lg:hidden dark:bg-black"
+          class="absolute top-0 left-0 z-50 flex h-dvh w-screen flex-col items-center justify-between bg-white p-4 lg:hidden dark:bg-black"
         >
           <ThemeSwitch />
           <div class="flex flex-col items-center gap-8">
@@ -76,9 +75,7 @@ router.beforeEach(() => {
               </RouterLink>
             </template>
           </div>
-          <BaseButton @click="onCloseMenu">
-            Close
-          </BaseButton>
+          <BaseButton @click="onCloseMenu"> Close </BaseButton>
         </nav>
       </Transition>
     </div>

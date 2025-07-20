@@ -27,8 +27,7 @@ function onFavourite() {
 
   if (isFavourite.value) {
     favouritesStore.removeFavouriteCharacter(props.character.id)
-  }
-  else {
+  } else {
     favouritesStore.addFavouriteCharacter(props.character.id)
   }
 }
@@ -39,7 +38,7 @@ function onFavourite() {
     <div class="flex flex-col gap-2 md:gap-8 lg:flex-row">
       <div class="flex shrink-0 flex-col gap-2">
         <div class="h-fit w-fit shrink-0 rounded-xs border-2 border-neutral-950">
-          <img :src="props.character.image" width="300" height="300" class="h-full w-full">
+          <img :src="props.character.image" width="300" height="300" class="h-full w-full" />
         </div>
 
         <BaseButton :variant="ButtonVariant.GHOST" :size="ButtonSize.SQUARE" @click="onFavourite">

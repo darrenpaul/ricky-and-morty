@@ -22,7 +22,8 @@ const value = defineModel<string>()
       v-if="props.label"
       class="font-space-mono pb-1 pl-1 text-xs dark:text-white/50"
       :for="props.id"
-    >{{ props.label }}</label>
+      >{{ props.label }}</label
+    >
     <select
       v-model="value"
       class="shadow-hard h-12 rounded-lg border-2 border-neutral-950 bg-white p-2 dark:bg-white/20 dark:text-white"

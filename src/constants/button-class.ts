@@ -1,5 +1,5 @@
-export const buttonBase
-  = 'flex items-center justify-center gap-3 rounded-lg border-2 p-2 transition-all ease-in-out cursor-pointer'
+export const buttonBase =
+  'flex items-center justify-center gap-3 rounded-lg border-2 p-2 transition-all ease-in-out cursor-pointer'
 
 export enum ButtonSize {
   SMALL = 'h-6 text-xs',

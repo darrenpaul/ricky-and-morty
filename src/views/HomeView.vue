@@ -30,7 +30,7 @@ import Container from '@/components/Container.vue'
         <Attributions class="hidden lg:block" />
       </div>
 
-      <img width="893" height="999" src="/rick-and-morty.png">
+      <img width="893" height="999" src="/rick-and-morty.png" />
 
       <Attributions class="block lg:hidden" />
     </div>
