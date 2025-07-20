@@ -4,7 +4,7 @@ import { useRoute } from 'vue-router'
 import BaseInput from '@/components/elements/BaseInput.vue'
 import { useSearchFilters } from '@/composables/search-filters'
 
-const props = defineProps<{ queryKey: string; label: string; suggestions?: string[] }>()
+const props = defineProps<{ queryKey: string, label: string, suggestions?: string[] }>()
 
 const route = useRoute()
 const { applyFilter } = useSearchFilters()

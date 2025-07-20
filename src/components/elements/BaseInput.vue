@@ -28,8 +28,7 @@ const value = defineModel<string | undefined>({
       v-if="props.label"
       :for="props.id"
       class="font-space-mono pb-1 pl-1 text-xs dark:text-white/50"
-      >{{ props.label }}</label
-    >
+    >{{ props.label }}</label>
     <input
       :id="props.id"
       v-model="value"
@@ -38,6 +37,6 @@ const value = defineModel<string | undefined>({
       :list="props.list"
       class="font-display shadow-hard h-12 rounded-lg border-2 border-neutral-950 bg-white p-2 dark:bg-white/20 dark:text-white"
       @blur="() => emits('blur')"
-    />
+    >
   </div>
 </template>

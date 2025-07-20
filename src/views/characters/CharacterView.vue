@@ -32,7 +32,8 @@ async function handleFetchData() {
     api.getCharacterById(Number.parseInt(routeParamId as string)).then(({ result }) => {
       if (result) {
         character.value = result
-      } else {
+      }
+      else {
         router.replace({ name: 'NotFound' })
       }
     })

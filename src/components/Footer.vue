@@ -4,7 +4,6 @@
       class="font-space-mono underline dark:text-blue-300"
       href="https://www.darrenpaul.dev/"
       target="_blank"
-      >Created by Darren Paul</a
-    >
+    >Created by Darren Paul</a>
   </div>
 </template>

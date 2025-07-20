@@ -15,7 +15,8 @@ watch(isOpen, () => {
     if (isOpen.value) {
       dialog.value.showModal()
       document.body.classList.add('overflow-y-hidden')
-    } else {
+    }
+    else {
       dialog.value.close()
       document.body.classList.remove('overflow-y-hidden')
     }
@@ -41,7 +42,9 @@ function onToggle() {
       <Container>
         <slot />
 
-        <BaseButton class="w-full" @click="onToggle"> Close </BaseButton>
+        <BaseButton class="w-full" @click="onToggle">
+          Close
+        </BaseButton>
       </Container>
     </dialog>
   </div>

@@ -42,7 +42,8 @@ function handleApplyFilter(queryKey: string, searchedText: string) {
 function onFavourite() {
   if (isFavourite.value) {
     favouritesStore.removeFavouriteCharacter(props.character.id)
-  } else {
+  }
+  else {
     favouritesStore.addFavouriteCharacter(props.character.id)
   }
 }
@@ -70,7 +71,7 @@ function onFavourite() {
         width="300"
         height="300"
         class="aspect-square w-full object-cover"
-      />
+      >
     </template>
 
     <template #heading>
