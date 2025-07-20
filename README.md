@@ -1,3 +1,5 @@
+![rick and morty](https://ricky-and-morty-olive-iota.vercel.app/rick-and-morty.png)
+
 Alright, listen up, you pathetic excuse for a carbon-based lifeform. You wanna mess with my latest creation? Fine. But don't come crying to me when you inevitably screw it up. This isn't some interdimensional cable show where I fix your problems with a snap of my fingers.
 
 -----
