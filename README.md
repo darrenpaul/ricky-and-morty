@@ -61,3 +61,32 @@ bun lint
 ```
 
 Now get out of my sight before I turn you into a sentient doorknob. And for the love of all that's unholy, **don't ask me for help.** Figure it out yourself. Wubba lubba dub dub.
+
+
+-----
+
+## Running Storybook (Don't Screw It Up)
+
+So, you think you're ready to see your components in all their mediocre glory? Fine. Use this command to fire up the Storybook development server. It'll probably open in your browser, reminding you of your own insignificance.
+
+```sh
+bun storybook
+# OR
+yarn storybook
+```
+
+-----
+
+## Building Storybook (For When You Actually Want to Share Your Failures)
+
+If, by some miracle, you've managed to create something half-decent and want to share it with the world (or at least your equally incompetent colleagues), you can build a static version of your Storybook. This command will compile it into a bunch of static files. Don't come crying to me if it takes forever; that's *your* code's fault.
+
+```sh
+bun build-storybook
+# OR
+yarn build-storybook
+```
+
+-----
+
+Now go on, get out of here. And remember: if you mess this up, I'm not helping you. You're on your own. Wubba lubba dub dub\!
