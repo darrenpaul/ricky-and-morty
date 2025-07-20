@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-display: swap;
+}
+
+:root {
+  font-family: Chewy;
+}
+
+@theme {
+  --font-chewy: 'Chewy', system-ui;
+  --font-press-start-2p: 'Press Start 2P', system-ui;
+  --font-space-mono: 'Space Mono', monospace;
+
+  --color-base: rgba(66, 180, 202, 1);
+  --color-base-dark: rgba(6, 2, 9, 1);
+  --color-primary: rgba(70, 206, 19, 1);
+  --color-secondary: rgba(255, 255, 255, 1);
+  --color-secondary-dark: rgba(13, 39, 21, 1);
+  --color-danger: rgba(214, 40, 40, 1);
+  --shadow-hard: 0px 4px 0px 0px rgba(0, 0, 0, 0.6);
+}
